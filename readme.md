@@ -8,3 +8,7 @@ pytest  --pylint --cov
 .pylintrc is the config for pylint
 .coveragerc is the config for coverage
 setup.py is a config file for pytest
+
+
+WEBEX RECORDING
+https://njit.webex.com/webappng/sites/njit/recording/59d816604090103abf2b0050568124a3/playback
