@@ -10,5 +10,5 @@ pytest  --pylint --cov
 setup.py is a config file for pytest
 
 
-WEBEX RECORDING
+# Video link:
 https://njit.webex.com/webappng/sites/njit/recording/59d816604090103abf2b0050568124a3/playback
