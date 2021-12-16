@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <head>
+    <title>Website Page Design</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+<body>
+    <div class = "hero">
+
+        <div class="content">
+            <small>Project 3</small>
+            <h1>By: <br>Shiva Modugu</h1>
+            <button type="button"><a href="/calculator">Take A Tour</a></button>
+        </div>
+
+
+        </div>
+
+        <div class="bubbles">
+            <img src = "./static/images/bubble.png">
+            <img src = "./static/images/bubble.png">
+            <img src = "./static/images/bubble.png">
+            <img src = "./static/images/bubble.png">
+            <img src = "./static/images/bubble.png">
+            <img src = "./static/images/bubble.png">
+            <img src = "./static/images/bubble.png">
+        </div>
+
+    </div>
+</body>
+</html>
+{% endblock %}
