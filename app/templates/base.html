@@ -21,15 +21,16 @@
 </head>
 <body>
 <nav>
-            <a href="index.html"><img src="pictures/logo.png"/></a>
+            <a href="index.html"><img src="./static/images/logo.png"/></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"> </i>
                 <ul>
                     <li><a href="/">HOME</a></li>
-                    <li><a href="/calculator">AAA Testing</a></li>
-                    <li><a href="OOPV.html">OOP Vocab</a></li>
-                    <li><a href="OOPC.html">OOP CONCEPT</a></li>
-                    <li><a href="SE.html">SEP OF CONCERNS</a></li>
+                    <li><a href="/calculator">Calculator</a></li>
+                    <li><a href="/OOPV">OOP Vocab</a></li>
+                    <li><a href="/OOPC">OOP CONCEPT</a></li>
+                    <li><a href="/SE">SEP OF CONCERNS</a></li>
+                    <li><a href="/AAA">AAA Testing</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -42,10 +43,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-<div id="footer">
-    {% block footer %}
-        &copy; Copyright 2021 by <a href="#">Shiva Modugu</a>.
-    {% endblock %}
-</div>
+
 </body>
 </html>

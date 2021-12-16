@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <head>
+    <title>Website Page Design</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Project 2 - OOP Concepts</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+
+
+    <h1>AAA Testing</h1>
+    </section>
+
+<!----About Me------>
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <h1>AAA & Unit Testing</h1>
+            <p>AAA stands for Arrange, Act, and Assert. When you do run these tests you run will start with "arranging" or setting up the tests. Then we are going to "act" and call the code we want to test. Finally, we are going to "assert" that the code we called acted in a way we could expect. So again, We "arrange" or we set up any variables, conditions we might need. We then "act" and execute the code we are interested in testing and finally we "assert" or check that the code is behavior in the way we would expect.
+                <br> You need to know the errors properly before launching the app or website. This allows a user to commit code without having the fear of it failing down the road.
+                    <br> <b>Example of Testing, type into a python editor and run it for yourself.</b>
+            <br> def greet(person):
+                <br>&nbsp&nbsp&nbsp&nbsp return "Hi {name}".format(**person)
+
+                <br>def test_greet():
+                <br>&nbsp&nbsp&nbsp&nbsp bob = {"name":"Bob"}		#Arrange
+                <br>&nbsp&nbsp&nbsp&nbsp greeting = greet(bob)		#Act
+                <br>&nbsp&nbsp&nbsp&nbsp Assert greeting == "Hi Bob"	#Assert
+
+                <br>When you type pytest command into the terminal it should show passed.
+            </p>
+            <a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/" class="hero-btn red-btn">Explore More</a>
+            <p>
+
+                A huge part of AAA testing is testing using external data, or unit testing. Individual units of source code-sets of one or more computer program modules, as well as accompanying control data, use processes, and operating procedures—are examined to see whether they are appropriate for use in unit testing. So, in order to use external data testing in Python, we'll need to import the unittest library, which is represented by the line "import unittest." After that, we'll need to unit test cases that go beyond the unittest case.
+                <br> <b>Example of Unit Testing</b>
+                <br>
+                import unittest
+
+               <br> class TestStringMethods(unittest.TestCase):
+
+
+                <br>&nbsp&nbsp&nbsp&nbsp def test_isupper(self):
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp self.assertTrue('FOO'.isupper())
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp self.assertFalse('Foo'.isupper())
+
+            </p>
+            <a href="https://docs.python.org/3/library/unittest.html" class="hero-btn red-btn">Explore More</a>
+        </div>
+        <div class="about-col">
+            <img src="./static/images/AAA.png">
+        </div>
+    </div>
+</section>
+
+<!----Others---->
+
+    <!---OTher stuff---->
+
+<!---Facilities--->
+
+    <!----Test---->
+
+<!---- Call to Actoin ---->
+<!----
+<section class="footer">
+    <h4>About Me</h4>
+    <p>ehjiufahiughwiugheagfa
+    raiughgiureahgiureagiueahgiuahreiugar
+    naiugrhgiureahgiuwhgiunraiufangiwa</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+---->
+<!--- Javacript for Menu --->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
+
+{% endblock %}

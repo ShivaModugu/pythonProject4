@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <head>
+    <title>Website Page Design</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Project 2 - OOP Concepts</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+
+    <h1>Separation of Concerns</h1>
+</section>
+
+<!----About Me------>
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <h1>Separation of Concerns</h1>
+            <p>Separation of concerns is a computer science design principle that divides a program into independent components.
+                Each section deals with a specific problem, a set of data that has an impact on the coding of a computer program.
+                It is important because the lack of duplication and singularity of purpose of the individual components render the overall system easier to maintain.
+                Basically separation of concerns tries to reduce the amount of coupling in the classes and increase the cohesion.
+            <br><b>Coupling </b> is the degree of interdependence between software modules.
+                <br><b>Cohesion</b> is the degree to which the elements inside a module belong together.
+                <br> In the example below you will see a good example of cohesion, where the class inheriting values from the superclass. This reduces coupling because the modelue is where the program is being run.
+                <br> <b>Example:</b>
+                <b>
+                    <br>
+
+                <br>from calculator.calculations.calculation import Calculation
+                <br>
+                <br>class Addition(Calculation):
+                <br>&nbsp&nbsp&nbsp&nbsp """ calculation addition class"""
+                <br>&nbsp&nbsp&nbsp&nbsp def get_result(self):
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp """get the addition results"""
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp sum_of_values = 0.0
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp for value in self.values:
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  sum_of_values = value + sum_of_values
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp return sum_of_values
+                </b>
+            </p>
+            <a href="https://github.com/ShivaModugu/calc_example/blob/main/calculator/calculations/addition.py" class="hero-btn red-btn">Explore More</a>
+        </div>
+        <div class="about-col">
+            <img src="./static/images/SE.png">
+        </div>
+    </div>
+</section>
+
+<!----Others---->
+
+<!---OTher stuff---->
+
+<!---Facilities--->
+
+<!----Test---->
+
+<!---- Call to Actoin ---->
+<!----
+<section class="footer">
+    <h4>About Me</h4>
+    <p>ehjiufahiughwiugheagfa
+    raiughgiureahgiureagiueahgiuahreiugar
+    naiugrhgiureahgiuwhgiunraiufangiwa</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+---->
+<!--- Javacript for Menu --->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -34,8 +34,9 @@ class CalculatorController(ControllerBase):
         return render_template('calculator.html', error=error)
     @staticmethod
     def get():
-        return render_template('index.html')
+
         return render_template('calculator.html')
+
 
 
     """

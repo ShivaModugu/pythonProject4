@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <head>
+    <title>Website Page Design</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Project 2 - OOP Concepts</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+
+
+    <h1>OOP Concepts</h1>
+    </section>
+
+
+<!----Others---->
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="./static/images/OOP2.-.jpg">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p><b>Encapsulation</b> is one of the cornerstones of OOP is encapsulation. It refers to the combination of data and procedures that operate on it. Encapsulation is a technique for hiding the values or state of a structured data object within a class, limiting unauthorized access.
+                    <br>Here is an example of encapsulation:
+                    <b>
+                    <br>@classmethod
+                    <br>def create(cls, v: tuple):
+                    <br>&nbsp&nbsp&nbsp&nbsp """ factory method"""
+                    <br>&nbsp&nbsp&nbsp&nbsp return cls(v)
+                    </b>
+                    <br>This is considered encapsulation because we are hiding the tuple value from the user. The tuple is pinned down onto the class.
+                    <br><b>Use Encapsulation button above to view full code.</b>
+                    <br>
+                </p>
+                <br>
+                <p>
+                    <b>Inheritance</b> is the process of one class inheriting the characteristics and methods of another. The Parent class is the one whose attributes and methods are inherited. Inheritance is often used when you want to implement methods from other classes, this allows cleaner code and shorter code.
+                    <br> Here is an example of inheritance:
+                    <br><b>  def get_result(self):</b>
+                    <br>The addition class inherits the calculation class, it inherits the values that you pass into the calculations class. The value "self" is being inherited.
+                    <br><b>Use Inheritance button above to view full code.</b>
+                </p>
+
+                <br>
+                <p><b>Polymorphism</b> is the method in an object-oriented programming language that performs different things as per the object's class, which calls it. With Polymorphism, a message is sent to multiple class objects, and every object responds appropriately according to the properties of the class.
+                <br> Here is an example of Polymorphism
+                    <b>
+                    <br># Polymorphism
+
+                    <br>def add(x, y, z = 0):
+                    <br>&nbsp&nbsp&nbsp&nbsp return x + y+z
+
+                    <br># Driver code
+                    <br>&nbsp&nbsp&nbsp&nbsp print(add(2, 3))
+                    <br>&nbsp&nbsp&nbsp&nbsp print(add(2, 3, 4))</b>
+                    <br> The output would be 5 and 9. This is an example of polymorphism because there are two different inputs for the same class when no value passed in it resorts to 0, if you see when you pass in a value for z it gets overridden.
+                    <br> <b>Use Polymorphism button above to view full code.</b>
+                </p>
+                <br>
+                <p><b>Abstraction</b>  is a notion in object-oriented programming that "shows" just the most important features while "hiding" the rest. The basic goal of abstraction is to keep consumers away from superfluous information. It is one of the most crucial OOP concepts.
+                <br>
+                    Here is an example of Abstraction:
+                    <b>
+                    <br>for value in self.values:
+                    <br>&nbsp&nbsp&nbsp&nbsp result = result * value    #Abstraction
+                    <br>return result
+                    </b>
+                    <br>
+                    It is consider Abstraction because it keeps the user away from the unneeded background information for multiply and only gives what is needed, keeping it easy to follow.
+                    <br>
+                    <b>Use Abstraction button above to view full code.</b>
+                </p>
+
+<!----
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class = "comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Enter Email">
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+
+                    </form>
+                </div>
+--->
+
+            </div>
+            <div class="blog-right">
+                <h3>OOP Examples </h3>
+                    <div>
+                        <a href="https://github.com/ShivaModugu/calc_example/blob/main/calculator/calculations/calculation.py" class="hero-btn red-btn"><span>Encapsulation</span></a>
+
+                    </div>
+                    <div>
+                        <a href="https://github.com/ShivaModugu/calc_example/tree/main/calculator/calculations" class="hero-btn red-btn"> <span>Inheritance</span></a>
+
+                    </div>
+                    <div>
+                        <a href="https://www.geeksforgeeks.org/polymorphism-in-python/" class="hero-btn red-btn"> <span>Polymorphism</span></a>
+
+                    </div>
+                    <div>
+                        <a href="https://github.com/ShivaModugu/calc_example/blob/main/calculator/calculations/multiplication.py" class="hero-btn red-btn"><span>Abstraction</span></a>
+
+                    </div>
+            </div>
+        </div>
+
+    </section>
+<!---- Call to Actoin ---->
+<!-----
+<section class="footer">
+    <h4>About Me</h4>
+    <p>ehjiufahiughwiugheagfa
+    raiughgiureahgiureagiueahgiuahreiugar
+    naiugrhgiureahgiuwhgiunraiufangiwa</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+---->
+<!--- Javacript for Menu --->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
+
+{% endblock %}

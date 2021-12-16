@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+    <head>
+    <title>Website Page Design</title>
+    <link rel ="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Project 2 - OOP Concepts</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+
+
+    <h1>OOP Terms</h1>
+    </section>
+
+
+<!----Others---->
+
+    <!---OTher stuff---->
+
+    <section class="course">
+        <h1>All Vocab</h1>
+        <p>This website covers vocabulary for OOP.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Vocab 1</h3>
+                <p>
+                    <b>Factory</b> - a factory is an object for creating other objects
+                    <br><b>Instantiation</b> - creation of an object referencing a class declaration
+                    an instantiated object is named and created
+                    <br><b>Object</b> is the thing you think about first in designing a program,
+                    they are also the units of code that are eventually derived from the process.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Vocab 2</h3>
+                <p>
+                    <b>Static</b> the variable or method marked as such is available at the class level
+                    <br>
+                    <b>Fixture</b> the set of preconditions or state needed to run a test
+                    <br>
+                    <b>Namespace</b>  a declarative region that provides a scope to the identifiers
+
+
+
+                   </p>
+            </div>
+            <div class="course-col">
+                <h3>Vocab 3</h3>
+                <p>
+                    <b>Constructor</b> a special type of subroutine called to create an object
+                <br>
+                    <b>Facade</b> an object that serves as a front-facing interface masking more complex underlying or structural code
+                <br>
+                    <b>Property</b> a special sort of class member, intermediate in functionality between a field and a method.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+<!---Facilities--->
+
+    <section class="facilities">
+        <h1>More Vocab</h1>
+        <p>Here are more important terms.</p>
+
+        <div class = "row">
+            <div class="facilities-col">
+                <img src="./static/images/library.png">
+                <h3>Vocab 4</h3>
+                <p>
+                    <b>Class Method</b> methods that are called on a class rather than an instance.
+                <br>
+                    <b>Method</b> a procedure associated with a message and an object
+                <br>
+                    <b>Property</b> a special sort of class member, intermediate in functionality between a field (or data member) and a method.
+
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./static/images/basketball.png">
+                <h3>Vocab 5</h3>
+                <p>
+                    <b>Type Hint</b> providing hints to function to only accept the given data type
+                    <br>
+                    <b>Type Cast</b> a method of changing an entity from one data type to another
+                    <br>
+                    <b>Unit Test</b> a specification of the inputs, execution conditions, testing procedure, and expected results that define a single test to be executed to achieve a particular software testing objective
+
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./static/images/cafeteria.png">
+                <h3>Vocab 6</h3>
+                <p>
+                    <b>Design Patterns</b>  reusable solutions to commonly occurring problems
+                    <br>
+                    <b>Parent</b> a parent is one class, and a child is another class that inherits all of the attributes and functions assigned to the parent class.
+                    <br>
+                    <b>Child</b> another class that inherits all of the attributes and functions assigned to the parent class.
+
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!----Test---->
+
+<!---- Call to Actoin ---->
+
+<section class="footer">
+    <h4>How To Install And Use Pylint</h4>
+    <p>Pylint may be installed on Windows with <b>pip install pytest-pylint</b> or <b>pip install pylint.</b> Pycharm's terminal may be used to execute Pylint using the command <b>pytest-pylint</b>, as seen in the example below.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+<!--- Javacript for Menu --->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>
+{% endblock %}
+
