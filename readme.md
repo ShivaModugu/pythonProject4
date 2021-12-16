@@ -1,6 +1,7 @@
 # Calculator - Project 3
 [![Build Status](https://app.travis-ci.com/kaw393939/calc2.svg?branch=main)](https://app.travis-ci.com/kaw393939/calc2)
 # Pylint Passing:
+![image](https://user-images.githubusercontent.com/77855067/146365384-28fe014f-2bdf-467d-b0a7-4ae1ba367527.png)
 
 # Calculator:
 <img width="925" alt="image" src="https://user-images.githubusercontent.com/77855067/146364925-a2e701fa-6f23-4edf-bfab-e2daba46fc81.png">
